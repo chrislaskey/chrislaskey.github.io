@@ -5,27 +5,9 @@
 }
 
 @font-face {
-	font-family: 'Brandon Grotesque Regular';
-	src: url('../fonts/Brandon_reg.woff') format('woff'),
-	     url('../fonts/Brandon_reg.ttf')  format('truetype');
-}
-
-@font-face {
 	font-family: 'Brandon Grotesque Medium';
 	src: url('../fonts/Brandon_med.woff') format('woff'),
 	     url('../fonts/Brandon_med.ttf')  format('truetype');
-}
-
-@font-face {
-	font-family: 'Avenir Roman';
-	src: url('../fonts/AvenirLTStd-Roman.woff') format('woff'),
-	     url('../fonts/AvenirLTStd-Roman.ttf')  format('truetype');
-}
-
-@font-face {
-	font-family: 'Adelle Regular';
-	src: url('../fonts/adelle_regular-webfont.woff') format('woff'),
-	     url('../fonts/adelle_regular-webfont.ttf')  format('truetype');
 }
 
 @font-face {
@@ -35,7 +17,6 @@
 }
 
 html, body{
-	background:#1b659f;
 	background:#1b659f url('../images/diagmonds.png');
 	color:#3a434c;
 	font:normal 18px/24px "Brandon Grotesque Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -47,9 +28,7 @@ html, body{
 }
 
 .wrapper{
-	position:relative;
 	width:100%;
-	z-index:100;
 }
 
 #wrapper-content{
@@ -59,7 +38,7 @@ html, body{
 	#banner{
 		color:#fff;
 		margin:0px auto;
-		width:960px;
+		width:940px;
 	}
 
 		#banner h2{
@@ -71,7 +50,8 @@ html, body{
 		}
 
 		#banner h3{
-			background: rgba(255, 255, 255, 0.10);
+			background:rgba(255, 255, 255, 0.10);
+			color:rgba(255, 255, 255, 0.85);
 			display:inline-block;
 			font:normal 30px/30px "Adelle Italic", Georgia, Times, serif;
 			margin:0px 0px 0px 0px;
@@ -114,3 +94,15 @@ html, body{
 				.buttons a.last{
 					background:#4b93dd;
 				}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#banner{ width:748px; }
+}
+
+@media only screen and (max-width: 767px) {
+	#banner{ width:300px; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#banner{ width:420px; }
+}
